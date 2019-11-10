@@ -1,0 +1,47 @@
+eslint & prettier with abnb style guide
+
+packages to install
+eslint-config-airbnb
+
+install vs code extensions for eslint and prettier
+
+websites
+eslint (Gives examples of best practise for writing javascript)
+arbnb style guide
+prettier
+
+include a custom config to personalize accordingly
+
+vscode global settings
+command ,
+under text-editor check format on save
+under prettier add check to use single quote
+
+initialize a node project and save eslint dep locally
+mkdir project_dir
+cd project_dir
+npm init -y
+npm i -D eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-node eslint-config-node
+
+Add the airbnb style guide
+npx install-peerdeps --dev eslint-config-airbnb
+
+create config files for prettier and airbnb in the project root to hold custom rules
+.prettierrc (see option rules on the prettier website)
+
+install eslint globally then user a command to create a local config file
+
+check for globally install packages in the npm
+npm list -g --depth 0
+
+install eslint globally
+npm i -g eslint
+
+now create a eslintrc.json config file in the project root
+eslint --init
+
+the file is reduced to extends/plugins and rules from the default configuration as
+generated in the init command
+
+edit the default .eslintrc.json config file add add custom rules as you see fit
+see the file in this project as a starting point
